@@ -1,0 +1,23 @@
+.signin {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signin h2 {
+  margin: 0 20px 20px;
+}
+
+.signin button {
+  height: 40px;
+  width: 200px;
+  border: 0;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+}

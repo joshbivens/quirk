@@ -1,0 +1,64 @@
+header {
+  height: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.app-logo {
+  margin-left: 20px;
+}
+
+.header__content {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.default-message {
+  margin-right: 20px;
+}
+
+.header__user-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__user-area img {
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.header__user-avatar,
+.header__user-username,
+.header__user-settings,
+.header i,
+.header__login {
+  margin-right: 25px;
+}
+
+.loggedIn,
+.loggedOut {
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 13px;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+  outline: none;
+}
+
+.loggedIn {
+  background: orange;
+}
+
+.loggedOut {
+  background: blue;
+}
+
+/* @media screen and (max-width: 400px) {
+
+} */

@@ -1,0 +1,12 @@
+body {
+  background: #eee;
+  font-family: 'Arimo', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+/* @media screen and (min-width: 900) {
+  .habit-container {}
+} */
