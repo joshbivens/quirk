@@ -1,10 +1,3 @@
-# TODO
-
-* Remove tags - DONE
-* Fix header - move user info to far right, logout next - DONE
-* Make container thinner - DONE
-* Upon completion, change progress bar color and add "Completed!" text above reps. - DONE
-
 # Quirk Habit Tracker
 
 Sign in to create a collection of new habits to foster. Track habits with hashtags and receive awards for different accomplishments.
