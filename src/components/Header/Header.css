@@ -26,18 +26,14 @@ header {
   align-items: center;
 }
 
+.header__user-username {
+  margin-right: 20px;
+}
+
 .header__user-area img {
   height: 50px;
   border-radius: 50%;
-  margin-left: 20px;
-}
-
-.header__user-avatar,
-.header__user-username,
-.header__user-settings,
-.header i,
-.header__login {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .loggedIn,
@@ -49,6 +45,7 @@ header {
   font-size: 0.9em;
   cursor: pointer;
   outline: none;
+  margin-right: 20px;
 }
 
 .loggedIn {

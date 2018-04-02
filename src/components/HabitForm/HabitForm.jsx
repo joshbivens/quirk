@@ -8,33 +8,16 @@ class HabitForm extends Component {
     super();
     this.state = {
       title: '',
-      reps: '',
-      tag: '',
-      tags: [],
+      reps: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value,
     });
-  }
-
-  handleKeyPress(e) {
-    this.setState({
-      tag: e.target.value,
-    });
-
-    if (e.key === ',') {
-      const { tag, tags } = this.state;
-      this.setState({
-        tags: [...tags, tag.slice(0, tag.length - 1)],
-        tag: '',
-      });
-    }
   }
 
   handleSubmit(e) {
@@ -44,15 +27,13 @@ class HabitForm extends Component {
       const habit = {
         title: this.state.title,
         reps: this.state.reps,
-        completed: 0,
-        tags: this.state.tags,
+        completed: 0
       };
       habitsRef.push(habit);
 
       this.setState({
         title: '',
-        reps: '',
-        tags: [],
+        reps: ''
       });
     }
   }
@@ -62,6 +43,7 @@ class HabitForm extends Component {
       <div className="habit-form">
         <form onSubmit={this.handleSubmit}>
           <input
+            id="title"
             type="text"
             name="title"
             placeholder="Title"
@@ -69,25 +51,17 @@ class HabitForm extends Component {
             onChange={this.handleChange}
           />
           <input
+            id="reps"
             type="number"
             name="reps"
             placeholder="Reps"
             value={this.state.reps}
             onChange={this.handleChange}
           />
-          <input
-            type="text"
-            name="tag"
-            placeholder="Tags Comma-Separated"
-            value={this.state.tag}
-            onChange={this.handleChange}
-            onKeyUp={this.handleKeyPress}
-          />
           <button type="submit" id="save">
             <i className="fa fa-floppy-o" aria-hidden="true" />
           </button>
         </form>
-        <ul>{this.state.tags.map((tag, index) => <li key={index}>{tag}</li>)}</ul>
       </div>
     );
   }

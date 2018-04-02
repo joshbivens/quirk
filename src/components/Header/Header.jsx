@@ -6,17 +6,15 @@ const Header = props => (
   <header>
     <div className="header__content">
 
-      <h2 className="app-logo" alt="logo">
-        Quirk
-      </h2>
+      <h2 className="app-logo" alt="logo">Quirk</h2>
       <div className="header__user-area">
+        {props.user ? <div className="header__user-username">{props.user.displayName}</div> : null}
+
         {props.user ? (
           <div className="header__user-avatar">
             <img src={props.user.photoURL} alt="user avatar" />
           </div>
-        ) : null }
-
-        {props.user ? <div className="header__user-username">{props.user.displayName}</div> : null}
+        ) : null}
 
         <div className="header__login">
           {props.user ? (
