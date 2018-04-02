@@ -79,3 +79,5 @@ Jan 02: Styled habits; added _delete_ and _update completed_ to individual habit
 Jan 05: Basic functionality complete.
 
 March 26: Begin CSS revamp.
+
+April 2: Update `gh-pages` branch.
